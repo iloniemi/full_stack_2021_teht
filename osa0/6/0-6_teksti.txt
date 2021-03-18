@@ -1,0 +1,19 @@
+title 0.6 uusi muistiinpano
+
+note over selain:
+Luo uuden note -nimisen muuttujan, johon tallennetaan viesti ja aika.
+Lisää noten aiemmin sivua avattaessa luotuun notes -taulukkoon.
+Tyhjentää kaavakkeen tekstikentän.
+Renderöi viestit muistissa olevan notes -taulukon pohjalta.
+Lähettää uuden viestin palvelimelle.
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over palvelin:
+Palvelin oletettavasti lisää lähetetyn viestin ja ajan taulukkoonsa.
+end note
+palvelin-->selain: 201 Created
+note over selain:
+Tulostaa konsoliin HTML-pyynnön vastaustekstin.
+end note
+
